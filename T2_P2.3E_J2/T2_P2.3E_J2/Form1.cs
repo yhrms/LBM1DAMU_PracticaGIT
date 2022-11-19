@@ -17,11 +17,6 @@ namespace T2_P2._3E_J2
             InitializeComponent();
         }
 
-        public Test5()
-        {
-            InitializeComponent();
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
 
@@ -35,17 +30,17 @@ namespace T2_P2._3E_J2
             textoTelegrama = txtTelegrama.Text;
 
             // telegrama urgente?
-            if (cbUrgente.Checked)
+            if (rbUrgente.Checked)
                 tipoTelegrama = 'u';
 
             //Obtengo el número de palabras que forma el telegrama
             //numPalabras = textoTelegrama.Length;
-            numPalabrass = textoTelegrama
+            numPalabras = textoTelegrama.Split(' ').Length;
 
             //Si el telegrama es ordinario
             if (tipoTelegrama == 'o')
                 if (numPalabras <= 10)
-                    coste = 2.6;
+                    coste = 2.5;
                 else
                 {
                     numPalabrasAdicionales = numPalabras - 10;
@@ -67,6 +62,16 @@ namespace T2_P2._3E_J2
 
 
         private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbUrgente_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
 
         }
