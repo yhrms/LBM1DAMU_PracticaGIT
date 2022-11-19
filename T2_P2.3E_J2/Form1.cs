@@ -17,7 +17,7 @@ namespace T2_P2._3E_J2
             InitializeComponent();
         }
 
-        public Test()
+        public Test4()
         {
             InitializeComponent();
         }
