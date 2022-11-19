@@ -17,6 +17,11 @@ namespace T2_P2._3E_J2
             InitializeComponent();
         }
 
+        public Test()
+        {
+            InitializeComponent();
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
 
