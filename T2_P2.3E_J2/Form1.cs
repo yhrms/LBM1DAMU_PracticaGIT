@@ -40,12 +40,12 @@ namespace T2_P2._3E_J2
 
             //Obtengo el número de palabras que forma el telegrama
             //numPalabras = textoTelegrama.Length;
-            numPalabras = textoTelegrama.Split(' ').Length;
+            numPalabrass = textoTelegrama
 
             //Si el telegrama es ordinario
             if (tipoTelegrama == 'o')
                 if (numPalabras <= 10)
-                    coste = 2.5;
+                    coste = 2.6;
                 else
                 {
                     numPalabrasAdicionales = numPalabras - 10;
